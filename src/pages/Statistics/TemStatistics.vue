@@ -212,7 +212,7 @@ export default {
       //根据选择的要素获取对应的数据
       var that = this;
       that.axios
-        .get(that.hostApi + `/InterfaceManage/` + apiUrl)
+        .get(that.hostApi + `/InterfaceManage` + apiUrl)
         .then(function(response) {
           console.log(response);
           var result = response.data;

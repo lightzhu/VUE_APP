@@ -135,7 +135,7 @@ export default {
       var that = this;
       that.Indicator.open({spinnerType: 'fading-circle'});
       that.axios
-        .get(that.hostApi + `/InterfaceManage/` + apiUrl)
+        .get(that.hostApi + `/InterfaceManage` + apiUrl)
         .then(function(response) {
           // console.log(response);
           var result = response.data;

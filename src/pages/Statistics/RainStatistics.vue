@@ -194,7 +194,7 @@ export default {
         that.Indicator.open({ spinnerType: "fading-circle" });
       }
       that.axios
-        .get(that.hostApi + `/InterfaceManage/` + apiUrl)
+        .get(that.hostApi + `/InterfaceManage` + apiUrl)
         .then(function(response) {
           var result = response.data; //这个是模拟数据
           if (result && result instanceof Object) {

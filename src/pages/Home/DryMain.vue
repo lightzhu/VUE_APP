@@ -126,7 +126,7 @@ export default {
       var that = this;
       that.Indicator.open({spinnerType: 'fading-circle'});
       that.axios
-        .get(that.hostApi + `/InterfaceManage/` + apiUrl)
+        .get(that.hostApi + `/InterfaceManage` + apiUrl)
         .then(function(response) {
           var result = response.data;
           if (result && result instanceof Object) {
