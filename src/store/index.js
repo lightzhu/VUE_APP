@@ -12,8 +12,8 @@ export default new Vuex.Store({
     warningMsg: [],
     hasNewVersion:false,
     ischecked:false,
-    //hostIP: "http://node-ex-light.7e14.starter-us-west-2.openshiftapps.com", //线上环境
-    hostIP: "/api" //开发环境
+    hostIP: "http://node-ex-light.7e14.starter-us-west-2.openshiftapps.com", //线上环境
+    //hostIP: "/api" //开发环境
   },
   mutations: {
     toggleNav(state) {
