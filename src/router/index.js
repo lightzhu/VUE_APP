@@ -159,7 +159,6 @@ const routes = [
 ];
 // 页面刷新时，重新赋值用户信息
 if (window.localStorage.getItem('user')) {
-  console.log(window.localStorage.getItem('user'));
   store.commit('login', JSON.parse(window.localStorage.getItem('user')));
 }
 const router = new VueRouter({

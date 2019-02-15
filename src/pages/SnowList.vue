@@ -49,7 +49,6 @@ export default {
             `/InterfaceManage/OuterApi/GetHistorySnowData`
         )
         .then(function(response) {
-          console.log(response);
           var result = response.data;
           that.snowList = result.resultdata;
           that.Indicator.close();

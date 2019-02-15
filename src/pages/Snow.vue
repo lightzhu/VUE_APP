@@ -89,7 +89,6 @@ export default {
       if (_.isNull(val)) {
         mui.alert("积雪厚度不允许为空");
         // mui.toast('积雪厚度不允许为空')
-        console.log(that.$refs[thisref]);
         that.$refs[thisref].focus();
         return false;
       }
@@ -107,7 +106,6 @@ export default {
     },
     tosubmit() {
       var that = this;
-      console.log(that.$store.state.userInfo);
       if(!that.$store.state.userInfo.Address||that.$store.state.userInfo.Address=='null'){
         mui.toast("上报地点不能为空，请联系管理员！");
         return false;

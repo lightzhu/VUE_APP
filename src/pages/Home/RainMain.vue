@@ -134,13 +134,12 @@ export default {
     },
     getElementData(apiUrl, load) {
       //根据选择的要素获取对应的数据
-      console.log("更新数据");
       var that = this;
       if (!load) {
         that.Indicator.open({ spinnerType: "fading-circle" });
       }
       that.axios
-        .get(that.hostApi + `/InterfaceManage/` + apiUrl)
+        .get(that.hostApi + `/InterfaceManage` + apiUrl)
         .then(function(response) {
           var result = response.data;
           if (result && result instanceof Object) {
@@ -289,14 +288,12 @@ export default {
   activated: function() {
     var that = this;
     this.autoupdate = setTimeout(function() {
-      console.log("自动更新");
       that.getElementData(that.elementApiUrl, true);
       that.getwarning();
     }, 30000);
   },
   deactivated:function(){
     clearTimeout(this.autoupdate);
-    console.log("离开组件");
   },
   components: {}
 };

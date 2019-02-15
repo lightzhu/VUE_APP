@@ -111,7 +111,6 @@ export default {
       for (var i = 0; i < _AreaResult.length; i++) {
         totalVal += parseFloat(_AreaResult[i].AvgDay);
       }
-      console.log(MAX, MIN);
       this.tongjiObj = {
         max: { value: MAX.Days, feid: "最大值", name: MAX.StationName },
         min: { value: MIN.Days, feid: "最小值", name: MIN.StationName },
@@ -129,7 +128,6 @@ export default {
       that.axios
         .get(that.hostApi + `/InterfaceManage/` + apiUrl)
         .then(function(response) {
-          console.log(response);
           var result = response.data;
           if (result && result instanceof Object) {
             if (result.CountResult.length > 0) {
@@ -177,7 +175,6 @@ export default {
   },
   beforeRouteEnter(to, from, next) {
     next(vm => {
-      console.log(vm); //vm为vue的实例
       vm.$store.commit("chooseElement", { name: "干旱", index: 4 });
     });
   },
