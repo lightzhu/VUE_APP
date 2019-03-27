@@ -243,10 +243,13 @@ export default {
               mui.toast("用户名或密码错误！");
               localStorage.removeItem("user");
               localStorage.removeItem("userpd");
+              that.Indicator.close();
             }
           })
           .catch(function(error) {
             mui.toast("用户验证异常,请退出重新登录");
+            that.$router.replace({ name: "login" });
+            that.Indicator.close();
           });
       }
     }
