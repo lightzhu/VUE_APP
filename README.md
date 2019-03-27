@@ -8,4 +8,4 @@ Vue 手机项目，结合mui可打包app
 [https://ainode.herokuapp.com/public/www/videos.html?videoUrl=anji-app]
 # web演示地址
 * 用户名和密码随意
-[http://node-ex-light.7e14.starter-us-west-2.openshiftapps.com/]
+[http://appdemo-light.1d35.starter-us-east-1.openshiftapps.com]
