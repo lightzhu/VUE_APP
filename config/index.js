@@ -13,7 +13,6 @@ module.exports = {
     proxyTable: {
       '/api': {  //代理地址
         target:'http://appdemo-light.1d35.starter-us-east-1.openshiftapps.com',
-        //target:'http://localhost:9000',
         changeOrigin: true,  //是否跨域
         // secure: false,  
         pathRewrite: {
