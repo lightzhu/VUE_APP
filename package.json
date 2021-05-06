@@ -16,7 +16,7 @@
     "mint-ui": "^2.2.13",
     "moment": "^2.22.2",
     "swiper": "^4.3.3",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "vue": "^2.5.2",
     "vue-awesome-mui": "^1.7.3",
     "vue-router": "^3.0.1",
